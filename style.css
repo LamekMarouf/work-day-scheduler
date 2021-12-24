@@ -58,14 +58,34 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border: none;
   background-color: #06aed5;
   color: white;
+  padding: 20px;
+  border-left: 1px solid black;
+  margin-bottom: 1px;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+}
+
+.hourBlock {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hour {
+  padding: 10px 10px 40px 40px;
+  border-right: 1px solid black;
+}
+
+.hourText {
+  width: 80%;
+  border: none;
+  margin-bottom: 1px;
+  background-color: grey;
 }
