@@ -57,6 +57,10 @@ textarea {
   color: white;
 }
 
+.container {
+  margin-bottom: 20px;
+}
+
 .saveBtn {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -81,11 +85,12 @@ textarea {
 .hour {
   padding: 10px 10px 40px 40px;
   border-right: 1px solid black;
+  width: 8%;
 }
 
 .hourText {
   width: 80%;
   border: none;
   margin-bottom: 1px;
-  background-color: grey;
+  background-color: rgb(238, 238, 238);
 }
