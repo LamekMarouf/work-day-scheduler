@@ -62,7 +62,14 @@ textarea {
 }
 
 .saveBtn,
-.saveBtnTwo {
+.saveBtnTwo,
+.saveBtnThree, 
+.saveBtnFour,
+.saveBtnFive,
+.saveBtnSix,
+.saveBtnSeven,
+.saveBtnEight,
+.saveBtnNine {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
@@ -90,7 +97,14 @@ textarea {
 }
 
 .hourText,
-.hourTextTwo {
+.hourTextTwo,
+.hourTextThree,
+.hourTextFour,
+.hourTextFive,
+.hourTextSix,
+.hourTextSeven,
+.hourTextEight,
+.hourTextNine {
   width: 40%;
   border: none;
   margin-bottom: 1px;
@@ -98,7 +112,14 @@ textarea {
 }
 
 .text,
-.textTwo {
+.textTwo,
+.textThree, 
+.textFour,
+.textFive,
+.textSix,
+.textSeven,
+.textEight,
+.textNine {
   width: 40%;
   border: none;
   margin-bottom: 1px;
