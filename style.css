@@ -61,7 +61,8 @@ textarea {
   margin-bottom: 20px;
 }
 
-.saveBtn {
+.saveBtn,
+.saveBtnTwo {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: none;
@@ -88,9 +89,29 @@ textarea {
   width: 8%;
 }
 
-.hourText {
-  width: 80%;
+.hourText,
+.hourTextTwo {
+  width: 40%;
   border: none;
   margin-bottom: 1px;
   background-color: rgb(238, 238, 238);
+}
+
+.text,
+.textTwo {
+  width: 40%;
+  border: none;
+  margin-bottom: 1px;
+  background-color: rgb(170, 170, 170);
+  height: 80px; 
+  color: black;
+  font-weight: 600;
+}
+
+#hiddenMessage {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  display: none;
 }
