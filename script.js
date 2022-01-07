@@ -3,9 +3,7 @@ window.setInterval(function () {
     $('#currentDay').html(moment().format('dddd, Do MMMM y - H:mm:ss'))
 }, 1000);
 
-
 // Saving After Refresh
-
 // 9am
 const storageInput = document.querySelector(".hourText");
 const text = document.querySelector('.text');
@@ -38,7 +36,7 @@ saveButton.addEventListener('click', saveToLocalStorage )
 if (moment().hour(9) < moment()) {
    storageInput.className = "past";
    text.className = "past"
-} else if (moment().hour(9) == moment()) {
+} else if (moment().hour() == 9) {
     storageInput.className = "present"
     text.className = "present"
 } else if (moment().hour(9) > moment()) {
@@ -79,7 +77,7 @@ saveButtonTwo.addEventListener('click', saveToLocalStorageTwo)
 if (moment().hour(10) < moment()) {
     storageInputTwo.className = "past";
     textTwo.className = "past"
- } else if (moment().hour(10) == moment()) {
+ } else if (moment().hour() == 10) {
      storageInputTwo.className = "present"
      textTwo.className = "present"
  } else if (moment().hour(10) > moment()) {
@@ -120,7 +118,7 @@ saveButtonThree.addEventListener('click', saveToLocalStorageThree)
 if (moment().hour(11) < moment()) {
     storageInputThree.className = "past";
     textThree.className = "past"
- } else if (moment().hour(11) == moment()) {
+ } else if (moment().hour() == 11) {
      storageInputThree.className = "present"
      textThree.className = "present"
  } else if (moment().hour(11) > moment()) {
@@ -160,7 +158,7 @@ saveButtonFour.addEventListener('click', saveToLocalStorageFour)
 if (moment().hour(12) < moment()) {
     storageInputFour.className = "past";
     textFour.className = "past"
- } else if (moment().hour(12) == moment()) {
+ } else if (moment().hour() == 12) {
      storageInputFour.className = "present"
      textFour.className = "present"
  } else if (moment().hour(12) > moment()) {
@@ -200,7 +198,7 @@ saveButtonFive.addEventListener('click', saveToLocalStorageFive)
 if (moment().hour(13) < moment()) {
     storageInputFive.className = "past";
     textFive.className = "past"
- } else if (moment().hour(13) == moment()) {
+ } else if (moment().hour() == 13) {
      storageInputFive.className = "present"
      textFive.className = "present"
  } else if (moment().hour(13) > moment()) {
@@ -240,7 +238,7 @@ saveButtonSix.addEventListener('click', saveToLocalStorageSix)
 if (moment().hour(14) < moment()) {
     storageInputSix.className = "past";
     textSix.className = "past"
- } else if (moment().hour(14) == moment()) {
+ } else if (moment().hour() == 14) {
      storageInputSix.className = "present"
      textSix.className = "present"
  } else if (moment().hour(14) > moment()) {
@@ -280,7 +278,7 @@ saveButtonSeven.addEventListener('click', saveToLocalStorageSeven)
 if (moment().hour(15) < moment()) {
     storageInputSeven.className = "past";
     textSeven.className = "past"
- } else if (moment().hour(15) == moment()) {
+ } else if (moment().hour() == 15) {
      storageInputSeven.className = "present"
      textSeven.className = "present"
  } else if (moment().hour(15) > moment()) {
@@ -319,7 +317,7 @@ saveButtonEight.addEventListener('click', saveToLocalStorageEight)
 if (moment().hour(16) < moment()) {
     storageInputEight.className = "past";
     textEight.className = "past"
- } else if (moment().hour(16) == moment()) {
+ } else if (moment().hour() == 16) {
      storageInputEight.className = "present"
      textEight.className = "present"
  } else if (moment().hour(16) > moment()) {
@@ -358,7 +356,7 @@ saveButtonNine.addEventListener('click', saveToLocalStorageNine);
 if (moment().hour(17) < moment()) {
     storageInputNine.className = "past";
     textNine.className = "past"
- } else if (moment().hour(17) == moment()) {
+ } else if (moment().hour() == 17) {
      storageInputNine.className = "present"
      textNine.className = "present"
  } else if (moment().hour(17) > moment()) {
