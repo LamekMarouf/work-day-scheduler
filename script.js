@@ -1,13 +1,25 @@
+// Auto-Updating Clock
 window.setInterval(function () {
     $('#currentDay').html(moment().format('dddd, Do MMMM y - H:mm:ss'))
 }, 1000);
 
+
+// Saving After Refresh
 
 // 9am
 const storageInput = document.querySelector(".hourText");
 const text = document.querySelector('.text');
 const saveButton = document.querySelector(".saveBtn");
 const storedInput = localStorage.getItem('textInput');
+const hiddenMessage = document.getElementById('hiddenMessage');
+
+function hiddenText() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('9am data saved!')
+}
+
+saveButton.addEventListener('click', hiddenText);
+
 
 if(storageInput) {
     text.textContent = storedInput
@@ -21,7 +33,19 @@ const saveToLocalStorage = () => {
     localStorage.setItem('textInput', text.textContent)
 }
 
-saveButton.addEventListener('click', saveToLocalStorage)
+saveButton.addEventListener('click', saveToLocalStorage )
+
+if (moment().hour(9) < moment()) {
+   storageInput.className = "past";
+   text.className = "past"
+} else if (moment().hour(9) == moment()) {
+    storageInput.className = "present"
+    text.className = "present"
+} else if (moment().hour(9) > moment()) {
+    storageInput.className = "future"
+    text.className = "future"
+}
+
 
 
 // 10am
@@ -29,6 +53,14 @@ const storageInputTwo = document.querySelector('.hourTextTwo');
 const textTwo = document.querySelector('.textTwo');
 const saveButtonTwo = document.querySelector('.saveBtnTwo');
 const storedInputTwo = localStorage.getItem('textInputTwo');
+const hiddenMessageTwo = document.getElementById('hiddenMessage');
+
+function hiddenTextTwo() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('10am data saved!')  
+}
+saveButtonTwo.addEventListener('click', hiddenTextTwo);
+
 
 if(storageInputTwo) {
     textTwo.textContent = storedInputTwo
@@ -44,12 +76,32 @@ const saveToLocalStorageTwo = () => {
 
 saveButtonTwo.addEventListener('click', saveToLocalStorageTwo)
 
+if (moment().hour(10) < moment()) {
+    storageInputTwo.className = "past";
+    textTwo.className = "past"
+ } else if (moment().hour(10) == moment()) {
+     storageInputTwo.className = "present"
+     textTwo.className = "present"
+ } else if (moment().hour(10) > moment()) {
+     storageInputTwo.className = "future"
+     textTwo.className = "future"
+ }
+
+
 
 // 11am
 const storageInputThree = document.querySelector('.hourTextThree');
 const textThree = document.querySelector('.textThree');
 const saveButtonThree = document.querySelector('.saveBtnThree');
 const storedInputThree = localStorage.getItem('textInputThree');
+const hiddenMessageThree = document.getElementById('hiddenMessage');
+
+function hiddenTextThree() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('11am data saved!')  
+}
+saveButtonThree.addEventListener('click', hiddenTextThree);
+
 
 if(storageInputThree) {
     textThree.textContent = storedInputThree
@@ -65,12 +117,31 @@ const saveToLocalStorageThree = () => {
 
 saveButtonThree.addEventListener('click', saveToLocalStorageThree)
 
+if (moment().hour(11) < moment()) {
+    storageInputThree.className = "past";
+    textThree.className = "past"
+ } else if (moment().hour(11) == moment()) {
+     storageInputThree.className = "present"
+     textThree.className = "present"
+ } else if (moment().hour(11) > moment()) {
+     storageInputThree.className = "future"
+     textThree.className = "future"
+ }
+
 
 // 12pm
 const storageInputFour = document.querySelector('.hourTextFour');
 const textFour = document.querySelector('.textFour');
 const saveButtonFour = document.querySelector('.saveBtnFour');
 const storedInputFour = localStorage.getItem('textInputFour');
+const hiddenMessageFour = document.getElementById('hiddenMessage');
+
+function hiddenTextFour() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('12pm data saved!')  
+}
+saveButtonFour.addEventListener('click', hiddenTextFour);
+
 
 if(storageInputFour) {
     textFour.textContent = storedInputFour
@@ -86,12 +157,31 @@ const saveToLocalStorageFour = () => {
 
 saveButtonFour.addEventListener('click', saveToLocalStorageFour)
 
+if (moment().hour(12) < moment()) {
+    storageInputFour.className = "past";
+    textFour.className = "past"
+ } else if (moment().hour(12) == moment()) {
+     storageInputFour.className = "present"
+     textFour.className = "present"
+ } else if (moment().hour(12) > moment()) {
+     storageInputFour.className = "future"
+     textFour.className = "future"
+ }
+
 
 // 1pm
 const storageInputFive = document.querySelector('.hourTextFive');
 const textFive = document.querySelector('.textFive');
 const saveButtonFive = document.querySelector('.saveBtnFive');
 const storedInputFive = localStorage.getItem('textInputFive');
+const hiddenMessageFive = document.getElementById('hiddenMessage');
+
+function hiddenTextFive() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('1pm data saved!')  
+}
+saveButtonFive.addEventListener('click', hiddenTextFive);
+
 
 if(storageInputFive) {
     textFive.textContent = storedInputFive
@@ -107,12 +197,31 @@ const saveToLocalStorageFive = () => {
 
 saveButtonFive.addEventListener('click', saveToLocalStorageFive)
 
+if (moment().hour(13) < moment()) {
+    storageInputFive.className = "past";
+    textFive.className = "past"
+ } else if (moment().hour(13) == moment()) {
+     storageInputFive.className = "present"
+     textFive.className = "present"
+ } else if (moment().hour(13) > moment()) {
+     storageInputFive.className = "future"
+     textFive.className = "future"
+ }
+
 
 //2pm
 const storageInputSix = document.querySelector('.hourTextSix');
 const textSix = document.querySelector('.textSix');
 const saveButtonSix = document.querySelector('.saveBtnSix');
 const storedInputSix = localStorage.getItem('textInputSix');
+const hiddenMessageSix = document.getElementById('hiddenMessage');
+
+function hiddenTextSix() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('2pm data saved!')  
+}
+saveButtonSix.addEventListener('click', hiddenTextSix);
+
 
 if(storageInputSix) {
     textSix.textContent = storedInputSix
@@ -128,6 +237,17 @@ const saveToLocalStorageSix = () => {
 
 saveButtonSix.addEventListener('click', saveToLocalStorageSix)
 
+if (moment().hour(14) < moment()) {
+    storageInputSix.className = "past";
+    textSix.className = "past"
+ } else if (moment().hour(14) == moment()) {
+     storageInputSix.className = "present"
+     textSix.className = "present"
+ } else if (moment().hour(14) > moment()) {
+     storageInputSix.className = "future"
+     textSix.className = "future"
+ }
+
 
 
 // 3pm
@@ -135,6 +255,13 @@ const storageInputSeven = document.querySelector('.hourTextSeven');
 const textSeven = document.querySelector('.textSeven');
 const saveButtonSeven = document.querySelector('.saveBtnSeven');
 const storedInputSeven = localStorage.getItem('textInputSeven');
+const hiddenMessageSeven = document.getElementById('hiddenMessage');
+
+function hiddenTextSeven() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('3pm data saved!')  
+}
+saveButtonSeven.addEventListener('click', hiddenTextSeven);
 
 if(storageInputSeven) {
     textSeven.textContent = storedInputSeven
@@ -150,6 +277,16 @@ const saveToLocalStorageSeven = () => {
 
 saveButtonSeven.addEventListener('click', saveToLocalStorageSeven)
 
+if (moment().hour(15) < moment()) {
+    storageInputSeven.className = "past";
+    textSeven.className = "past"
+ } else if (moment().hour(15) == moment()) {
+     storageInputSeven.className = "present"
+     textSeven.className = "present"
+ } else if (moment().hour(15) > moment()) {
+     storageInputSeven.className = "future"
+     textSeven.className = "future"
+ }
 
 
 // 4pm
@@ -157,6 +294,13 @@ const storageInputEight = document.querySelector('.hourTextEight');
 const textEight = document.querySelector('.textEight');
 const saveButtonEight = document.querySelector('.saveBtnEight');
 const storedInputEight = localStorage.getItem('textInputEight');
+const hiddenMessageEight = document.getElementById('hiddenMessage');
+
+function hiddenTextEight() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('4pm data saved!')  
+}
+saveButtonEight.addEventListener('click', hiddenTextEight);
 
 if(storageInputEight) {
     textEight.textContent = storedInputEight
@@ -172,6 +316,16 @@ const saveToLocalStorageEight = () => {
 
 saveButtonEight.addEventListener('click', saveToLocalStorageEight)
 
+if (moment().hour(16) < moment()) {
+    storageInputEight.className = "past";
+    textEight.className = "past"
+ } else if (moment().hour(16) == moment()) {
+     storageInputEight.className = "present"
+     textEight.className = "present"
+ } else if (moment().hour(16) > moment()) {
+     storageInputEight.className = "future"
+     textEight.className = "future"
+ }
 
 
 // 5pm
@@ -179,6 +333,13 @@ const storageInputNine = document.querySelector('.hourTextNine');
 const textNine = document.querySelector('.textNine');
 const saveButtonNine = document.querySelector('.saveBtnNine');
 const storedInputNine = localStorage.getItem('textInputNine');
+const hiddenMessageNine = document.getElementById('hiddenMessage');
+
+function hiddenTextNine() {
+    console.log('Save Button pressed')
+    document.getElementById('hiddenMessage').textContent = ('5pm data saved!')  
+}
+saveButtonNine.addEventListener('click', hiddenTextNine);
 
 if(storageInputNine) {
     textNine.textContent = storedInputNine
@@ -190,6 +351,18 @@ storageInputNine.addEventListener('input', letterNine => {
 
 const saveToLocalStorageNine = () => {
     localStorage.setItem('textInputNine', textNine.textContent)
-}
+};
 
-saveButtonNine.addEventListener('click', saveToLocalStorageNine)
+saveButtonNine.addEventListener('click', saveToLocalStorageNine);
+
+if (moment().hour(17) < moment()) {
+    storageInputNine.className = "past";
+    textNine.className = "past"
+ } else if (moment().hour(17) == moment()) {
+     storageInputNine.className = "present"
+     textNine.className = "present"
+ } else if (moment().hour(17) > moment()) {
+     storageInputNine.className = "future"
+     textNine.className = "future"
+ }
+

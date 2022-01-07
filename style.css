@@ -42,20 +42,38 @@ textarea {
   border-top: 1px dashed #000000;
 }
 
+
 .past {
-  background-color: #d3d3d3;
   color: white;
+  width: 40%;
+  border: none;
+  margin-bottom: 1px;
+  background-color: #d3d3d3;
+  border-left: 1px solid black;
+  padding-left: 2px;
+  padding-top: 5px;
 }
 
 .present {
-  background-color: #ff6961;
   color: white;
+  width: 40%;
+  border: none;
+  margin-bottom: 1px;
+  background-color: #ff6961;
+  border-left: 1px solid black;
+  padding-left: 2px;
+  padding-top: 5px;
 }
 
 .future {
-  background-color: #77dd77;
   color: white;
-}
+  width: 40%;
+  border: none;
+  margin-bottom: 1px;
+  background-color: #77dd77;
+  border-left: 1px solid black;
+  padding-left: 2px;
+  padding-top: 5px;}
 
 .container {
   margin-bottom: 20px;
@@ -96,37 +114,15 @@ textarea {
   width: 8%;
 }
 
-.hourText,
-.hourTextTwo,
-.hourTextThree,
-.hourTextFour,
-.hourTextFive,
-.hourTextSix,
-.hourTextSeven,
-.hourTextEight,
-.hourTextNine {
+.hourText, .hourTextTwo, .hourTextThree, .hourTextFour, .hourTextFive, .hourTextSix, .hourTextSeven, .hourTextEight, .hourTextNine,
+.text, .textTwo, .textThree, .textFour, .textFive, .textSix, .textSeven, .textEight, .textNine {
   width: 40%;
   border: none;
   margin-bottom: 1px;
   background-color: rgb(238, 238, 238);
-}
-
-.text,
-.textTwo,
-.textThree, 
-.textFour,
-.textFive,
-.textSix,
-.textSeven,
-.textEight,
-.textNine {
-  width: 40%;
-  border: none;
-  margin-bottom: 1px;
-  background-color: rgb(170, 170, 170);
-  height: 80px; 
-  color: black;
-  font-weight: 600;
+  border-left: 1px solid black;
+  padding-left: 2px;
+  padding-top: 5px;
 }
 
 #hiddenMessage {
@@ -134,5 +130,5 @@ textarea {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 600;
-  display: none;
+  color: #06aed5;
 }
